@@ -1,0 +1,279 @@
+:root{
+--green:#0B5731;
+--light:#e4ffe4;
+--light-2:#f4fff4;
+--gray:#e6e7e8;
+--gradient:linear-gradient(to right, #e4ffe4, #b8fcb8);
+--gradient-2:linear-gradient(to right, #05a50a, #022802);
+
+--big-medium:1.5rem;
+--big-size:2rem;
+--bigger-size:7rem;
+--medium-big:5rem;
+--small-size:1.25rem;
+--smaller-size:.75rem;
+
+
+--transition: all 0.5s ease-in-out;
+--transition-2: all 1.5s ease-in-out;
+
+
+
+}
+
+body{
+    box-sizing:border-box;
+    max-width:100%;
+    padding:0;
+    margin:0;
+    font-family:"poppins";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.main-container{
+    box-sizing:border-box;
+    max-width:100%;
+    padding:0px;
+}
+
+
+a{
+    text-decoration:none;
+}
+
+.hero-container{
+    background:var(--green);
+    color:white;
+    padding:2rem;
+}
+
+
+
+
+
+
+
+
+/*loading screen style design here*/
+/*loading screen style design here*/
+/*loading screen style design here*/
+
+/* Loading screen style */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-2); /* Green and Lemon gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s, visibility 1s;
+}
+
+.loading-text-container {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.loading-text, .dot {
+    opacity: 0;
+    animation: typing 3s steps(11) forwards, fadeIn 3s ease-out forwards;
+}
+
+.dot {
+    opacity: 0;
+    animation: dotFade 3s steps(1) forwards;
+    animation-delay: 2.5s; /* Add delay before the dot appears */
+}
+
+/* Animation for typing effect */
+@keyframes typing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animation for dot appearance */
+@keyframes dotFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Delay for each letter */
+.loading-text:nth-child(1) {
+    animation-delay: 0s;
+}
+.loading-text:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.loading-text:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.loading-text:nth-child(4) {
+    animation-delay: 0.9s;
+}
+.loading-text:nth-child(5) {
+    animation-delay: 1.2s;
+}
+.loading-text:nth-child(6) {
+    animation-delay: 1.5s;
+}
+.loading-text:nth-child(7) {
+    animation-delay: 1.8s;
+}
+.loading-text:nth-child(8) {
+    animation-delay: 2.1s;
+}
+.loading-text:nth-child(9) {
+    animation-delay: 2.4s;
+}
+.loading-text:nth-child(10) {
+    animation-delay: 2.7s;
+}
+.loading-text:nth-child(11) {
+    animation-delay: 3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animation for the text 
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s, visibility 1s;
+}
+
+.loading-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+*/
+
+
+
+
+
+/*CSS ANIMATION FOR HERO SECTION*/
+/*CSS ANIMATION FOR HERO SECTION*/
+/*CSS ANIMATION FOR HERO SECTION*/
+
+/* Initially hide the hero-right-container and position it off-screen */
+.hero-right-container {
+    opacity: 0;
+    transform: translateX(100px); /* Position off to the right */
+    animation: slideIn 1s ease-out forwards;
+}
+
+/* Define the animation to slide the element into view */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100px); /* Start from the right off-screen */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at the normal position */
+    }
+}
+
+/* Optional: Add transition for smooth image appearance */
+.hero-right-container .img-content img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hero-right-container img {
+    animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*GENERAL CSS ANIMATION DESIGN*/
+/*GENERAL CSS ANIMATION DESIGN*/
+/*GENERAL CSS ANIMATION DESIGN*/
+/*GENERAL CSS ANIMATION DESIGN*/
+@keyframes Fade-IN {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}

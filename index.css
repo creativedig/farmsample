@@ -1,0 +1,776 @@
+.header{
+    background:var(--gradient);
+    position:fixed;
+    max-width:100%;
+    right:0;
+    left:0;
+    max-height:15%;
+    z-index:100;
+}
+
+.header-container{
+    padding: .4rem 7rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color:var(--green);
+}
+
+.header-logo h1{
+    font-size:var(--big-size);
+}
+
+nav a{
+    margin-right: 1.5rem;
+    font-weight: 500;
+    color:var(--green);
+    letter-spacing: .2rem;
+    font-size:var(--small-size);
+    transition:var(--transition);
+}
+
+nav a:hover{
+    font-size:var(--smaller-size);
+}
+
+
+#menu-icon{
+    display:none;
+}
+
+
+
+/*=====HERO CONTAINER DESIGN  =============*/
+/*=====HERO CONTAINER DESIGN  =============*/
+/*=====HERO CONTAINER DESIGN  =============*/
+/*=====HERO CONTAINER DESIGN  =============*/
+
+.hero-container, .hero-content-container{
+    box-sizing: border-box;
+    background:var(--green);
+    position:relative;
+}
+
+.hero-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content-container{
+    padding: 7rem 3rem 15rem;
+    display: flex;
+    gap:1rem;
+}
+
+.hero-left-container{
+    max-width:60%;
+}
+
+.hero-left-container h1{
+    color:var(--light);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:var(--bigger-size);
+    line-height: 6.5rem;
+    letter-spacing: .5rem;
+}
+
+.hero-left-container p{
+    color:white;
+    margin:-4rem 10rem 2rem 0rem;
+    font-size:var(--small-size);
+}
+
+.hero-left-container a{
+    box-sizing:border-box;
+    background:var(--light);
+    padding:1rem 4rem;
+    Color:var(--green);
+    font-weight: 700;
+    font-size:var(--small-size);
+    transition:var(--transition);
+}
+
+.hero-left-container a:hover{
+    border-radius:5rem;
+    border-color: var(--light);
+    border-width:0.1rem;
+    color:var(--light);
+    border-style:solid;
+    background:transparent;
+}
+
+.hero-right-container{
+    max-width:35%;
+    width:100%;
+    position:relative;
+    right:0;
+    top:0;
+    margin-top:-5rem;
+}
+
+.img-bg{
+    content:"";
+    background-image: url(/site_image/images\ \(49\).jpeg);
+    background-position: left;
+    background-repeat: no-repeat;
+    max-height:80%;
+    border-radius: 0rem 0rem 5rem 5rem;
+    max-width:100%;
+    position:relative;
+    padding:12rem 2rem;
+}
+
+.img-content{
+cursor:pointer;
+max-width:100%;
+display:flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+
+}
+
+
+.img-content img{
+    width:25rem;
+    height:25rem;
+    position:absolute;
+    z-index:10;
+    border-radius:50%;
+    border:solid .75rem var(--light);
+}
+
+
+
+
+/*=====product CONTAINER DESIGN  =============*/
+/*=====product CONTAINER DESIGN  =============*/
+/*=====product CONTAINER DESIGN  =============*/
+/*=====product CONTAINER DESIGN  =============*/
+
+.product-contaienr{
+    background: var(--light);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:7rem 8rem;
+    min-height:100%;
+    box-sizing:border-box;
+}
+
+.product-container-content h1{
+    color: var(--green);
+    text-align:center;
+    font-size:var(--big-size);
+}
+
+.product-container-cards{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content:center;
+    margin-top: 2rem;
+}
+
+.product-container-cards .card-box{
+    max-width:28%;
+    overflow:hidden;
+    position:relative;
+    border:solid var(--green) .25rem;
+}
+
+.card-box{
+    height:300px;
+    margin-bottom: 1rem;
+    transition:var(--transition-2);}
+
+.card-box:hover{
+    border-radius:50%;
+    transform: rotate(360deg);
+    animation: Fade-IN 0.5s ease-in-out 1;
+}
+
+.card-box img{
+    cursor:pointer;
+    max-width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: bottom;
+    position:relative;
+}
+
+.card-box-hidden{
+    position:absolute;
+    z-index:15;
+    left:0;
+    right:0;
+    bottom:0;
+    top:40%;
+     background:linear-gradient(to top, rgb(20, 233, 20), rgba(162, 252, 102, 0));
+     text-align:center;
+     cursor:pointer;
+     padding:20px 0px;
+     transition:var(--transition);
+     display:flex;
+     flex-direction:column;
+     opacity:0;
+}
+
+.card-box:hover .card-box-hidden{
+    opacity:1;
+
+
+}
+.card-box-hidden h4{
+    color:white;
+    font-size:var(--small-size);
+    padding-top:2rem;
+}
+
+.card-box-hidden a{
+    margin-top:-1.5rem;
+    color:var(--green);
+    font-weight:600;
+    transition: var(--transition);
+}
+
+.card-box-hidden a:hover{
+    color:var(--light);
+    background:var(--green);
+    padding:.2rem 0rem;
+}
+
+
+
+
+/*=====Contact CONTAINER DESIGN  =============*/
+/*=====Contact CONTAINER DESIGN  =============*/
+/*=====Contact CONTAINER DESIGN  =============*/
+/*=====Contact CONTAINER DESIGN  =============*/
+
+
+.contact-container{
+    display:flex;
+    max-width:100%;
+    background:var(--light-2);
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+.left-container{
+    max-width:60%;
+    margin:8rem 0rem;
+}
+.left-container img{
+    max-width:100%;
+}
+
+.right-container{
+    position:relative;
+    z-index:10;
+    margin:0rem 4rem 0rem -5rem;
+}
+
+.right-container h2{
+    font-size:var(--big-size);
+    color:var(--green);
+}
+
+.right-container form label{
+    color:var(--green);
+}
+
+.right-container form input{
+    width:100%;
+    border-width: 0rem 0rem .1rem 0rem;
+    padding: .5rem;
+    border-color:var(--green);
+    margin-bottom:2rem;
+    color:var(--green);
+    background: transparent;
+}
+
+.right-container textarea{
+    width:100%;
+    border-width: 0rem 0rem .1rem 0rem;
+    padding: .5rem;
+    border-color:var(--green);
+    margin-bottom:2rem;
+    color:var(--green);
+    background: transparent;
+}
+
+#submit-button{
+    cursor:pointer;
+    background:var(--green);
+    width:50%;
+    padding: 1rem 2rem;
+    color:white;
+    text-transform:uppercase;
+    font-weight:600;
+    transition:var(--transition);
+}
+
+#submit-button:hover{
+    background:transparent;
+    color:var(--green);
+    border-width: 0rem 0rem .1rem .1rem;
+}
+
+
+/*=====Footer CONTAINER DESIGN  =============*/
+/*=====Footer CONTAINER DESIGN  =============*/
+/*=====Footer CONTAINER DESIGN  =============*/
+/*=====Footer CONTAINER DESIGN  =============*/
+
+
+.footer-container{
+    background:rgb(236, 233, 233);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    color:var(--green);
+}
+
+.footer-container h3{
+   margin:2rem 0rem -1rem;
+}
+
+.footer-container h5{
+    margin-bottom:2rem;
+}
+
+
+
+
+
+
+
+/*--=======  AT MOBILE DESIGN HERE 600PX SCREEN TO 900PX--*/
+/*--=======  AT MOBILE DESIGN HERE 600PX SCREEN TO 900PX--*/
+/*--=======  AT MOBILE DESIGN HERE 600PX SCREEN TO 900PX--*/
+/*--=======  AT MOBILE DESIGN HERE 600PX SCREEN TO 900PX--*/
+/*--=======  AT MOBILE DESIGN HERE 600PX SCREEN TO 900PX--*/
+
+@media all and (max-width:900px)
+{
+
+
+    .header{
+        max-height:15%;
+    }
+    
+    .header-container{
+        padding: .3rem 2rem;
+    }
+    
+    .header-logo h1{
+        cursor:pointer;
+        font-size:var(--small-size);
+    }
+
+    .nav{
+        box-sizing:border-box;
+        background:var(--gradient);
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:-100%;
+        z-index:80;
+        margin:5.2rem 0rem;
+        padding: 10rem 1rem;
+        min-height:100vh;
+        min-width: 50vw;
+        transition:var(--transition);
+    }
+    nav{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    
+    nav a{
+        text-align: end;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 500;
+        letter-spacing:0;
+        font-size:var(--big-size);
+    }
+    
+    nav a:hover{
+        font-size:var(--big-size);
+        margin-right: 3rem;
+    }
+    
+
+    #menu-icon{
+        cursor:pointer;
+        display:block;
+        max-width: 30%;
+    }
+    
+    #menu-icon h4{
+        background:var(--green);
+        padding: .3rem;
+        width:100%;
+        text-align:center;
+        color:var(--light);
+        transition: var(--transition);
+    }
+
+    #menu-icon:hover h4{
+        background:var(--light);
+        color:var(--green);
+    }
+
+
+
+
+/*=====HERO CONTAINER DESIGN  =============*/
+/*=====HERO CONTAINER DESIGN  =============*/
+/*=====HERO CONTAINER DESIGN  =============*/
+/*=====HERO CONTAINER DESIGN  =============*/
+
+.hero-container, .hero-content-container{
+    padding: 7rem 1rem;
+}
+
+.hero-container{
+    background: var(--light);
+}
+
+.hero-content-container{
+    flex-direction:column;
+    gap:.25rem;
+}
+
+.hero-left-container{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    max-width:100%;
+    margin:0rem 0rem 3rem 1rem;
+}
+
+.hero-left-container h1{
+    font-size:var(--medium-big);
+    line-height: 5rem;
+    letter-spacing: .2rem;
+}
+
+.hero-left-container p{
+    color:white;
+    margin:-3rem 2rem 2rem 0rem;
+    font-size:var(--small-size);
+    line-height: 1.75rem;
+}
+
+.hero-left-container a{
+    box-sizing:border-box;
+    background:var(--light);
+    padding:1rem 4rem;
+    Color:var(--green);
+    font-weight: 700;
+}
+
+
+.hero-right-container{
+    max-width:100%;
+    width:100%;
+    position:relative;
+    right:0;
+    top:0;
+    margin-top:-8rem;
+}
+
+.img-bg{
+    display:none;
+}
+
+.img-content{
+    margin-top:25rem;
+
+}
+.img-content img{
+    width:27rem;
+    height:27rem;
+}
+
+
+
+
+/*=====product CONTAINER DESIGN  =============*/
+/*=====product CONTAINER DESIGN  =============*/
+/*=====product CONTAINER DESIGN  =============*/
+/*=====product CONTAINER DESIGN  =============*/
+
+.product-contaienr{
+    padding:10rem 3rem;
+}
+
+.product-container-content h1{
+    font-size:var(--big-medium);
+}
+
+.product-container-cards{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content:center;
+    margin-top: 2rem;
+}
+
+.product-container-cards .card-box{
+    max-width:100%;
+}
+
+.card-box{
+    height:400px;
+    margin-bottom: 1rem;
+}
+
+
+.card-box-hidden{
+    top:50%;
+}
+
+.card-box:hover .card-box-hidden{
+    opacity:1;
+
+
+}
+.card-box-hidden h4{
+    font-size:var(--big-size);
+}
+
+.card-box-hidden a{
+    margin-top:-2rem;
+}
+
+.card-box-hidden a:hover{
+    color:var(--light);
+    background:var(--green);
+    padding:-.5rem 0rem;
+}
+
+
+
+/*=====Contact CONTAINER DESIGN  =============*/
+/*=====Contact CONTAINER DESIGN  =============*/
+/*=====Contact CONTAINER DESIGN  =============*/
+/*=====Contact CONTAINER DESIGN  =============*/
+
+
+.contact-container{
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+.left-container{
+    max-width:100%;
+}
+
+.left-container img{
+    width:100%;
+}
+
+.right-container{
+    position:relative;
+    z-index:10;
+    margin:-5rem 0rem 5rem;
+}
+
+.right-container h2{
+    font-size:var(--big-size);
+    color:var(--green);
+}
+
+.right-container form label{
+    color:var(--green);
+}
+
+.right-container form input{
+    width:100%;
+    border-width: 0rem 0rem .1rem 0rem;
+    padding: .5rem;
+    border-color:var(--green);
+    margin-bottom:2rem;
+    color:var(--green);
+    background: transparent;
+}
+
+.right-container textarea{
+    width:100%;
+    border-width: 0rem 0rem .1rem 0rem;
+    padding: .5rem;
+    border-color:var(--green);
+    margin-bottom:2rem;
+    color:var(--green);
+    background: transparent;
+}
+
+#submit-button{
+    cursor:pointer;
+    background:var(--green);
+    width:50%;
+    padding: 1rem 2rem;
+    color:white;
+    text-transform:uppercase;
+    font-weight:600;
+    transition:var(--transition);
+}
+
+#submit-button:hover{
+    background:transparent;
+    color:var(--green);
+    border-width: 0rem 0rem .1rem .1rem;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--=======  AT MOBILE DESIGN HERE 901PX SCREEN TO 1075PX--*/
+/*--=======  AT MOBILE DESIGN HERE 901PX SCREEN TO 1075PX--*/
+/*--=======  AT MOBILE DESIGN HERE 901PX SCREEN TO 1075PX--*/
+/*--=======  AT MOBILE DESIGN HERE 901PX SCREEN TO 1075PX--*/
+/*--=======  AT MOBILE DESIGN HERE 901PX SCREEN TO 1075PX--*/
+
+@media (min-width:901px) and (max-width:1075px)
+{
+
+    .header{
+        background:var(--gradient);
+        position:fixed;
+        max-width:100%;
+        right:0;
+        left:0;
+        max-height:15%;
+        z-index:100;
+    }
+    
+    .header-container{
+        padding: .4rem 7rem;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        color:var(--green);
+    }
+    
+    .header-logo h1{
+        font-size:var(--big-size);
+    }
+    
+    nav a{
+        margin-right: 1.5rem;
+        font-weight: 500;
+        color:var(--green);
+        letter-spacing: .2rem;
+        font-size:var(--small-size);
+        transition:var(--transition);
+    }
+    
+    nav a:hover{
+        font-size:var(--smaller-size);
+    }
+    
+    
+    #menu-icon{
+        display:none;
+    }
+    
+    
+    
+    /*=====HERO CONTAINER DESIGN  =============*/
+    /*=====HERO CONTAINER DESIGN  =============*/
+    /*=====HERO CONTAINER DESIGN  =============*/
+    /*=====HERO CONTAINER DESIGN  =============*/
+    
+    
+    
+   
+.hero-content-container{
+    padding: 7rem 3rem 5rem;
+    display: flex;
+    gap:2rem;
+}
+
+    
+    .hero-left-container{
+        max-width:100%;
+    }
+    
+    .hero-left-container h1{
+        color:var(--light);
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:var(--medium-big);
+        line-height: 5rem;
+        letter-spacing: .2rem;
+    }
+    
+    .hero-left-container p{
+        color:white;
+        margin:-3rem 5rem 2rem 0rem;
+        font-size:var(--small-size);
+        line-height:1.75rem;
+    }
+    
+       
+    .hero-right-container{
+        max-width:50%;
+        position:relative;
+        margin-top:0rem;
+    }
+    
+    .img-bg{
+        display: none;
+    }
+
+    .img-content img{
+        width:27rem;
+        height:27rem;
+        position:relative;
+        z-index:10;
+        border-radius:50%;
+    }
+    
+    
+    
+    
+    /*=====product CONTAINER DESIGN  =============*/
+    /*=====product CONTAINER DESIGN  =============*/
+    /*=====product CONTAINER DESIGN  =============*/
+    /*=====product CONTAINER DESIGN  =============*/
+    
+    
+    .product-container-cards{
+        gap:1rem;
+    }
+    
+    .product-container-cards .card-box{
+        max-width:45%;
+    }
+    
+    
+
+}
