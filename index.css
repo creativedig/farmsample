@@ -499,8 +499,8 @@ justify-content: center;
 
 }
 .img-content img{
-    width:22rem;
-    height:22rem;
+    width:21rem;
+    height:21rem;
 }
 
 
@@ -589,11 +589,15 @@ justify-content: center;
     position:relative;
     z-index:10;
     margin:-5rem 0rem 5rem;
+    max-width:85%;
 }
 
 .right-container h2{
     font-size:var(--big-size);
     color:var(--green);
+}
+.right-container form{
+    width:100%;
 }
 
 .right-container form label{
@@ -601,7 +605,7 @@ justify-content: center;
 }
 
 .right-container form input{
-    width:100%;
+    width:85%;
     border-width: 0rem 0rem .1rem 0rem;
     padding: .5rem;
     border-color:var(--green);
@@ -611,7 +615,7 @@ justify-content: center;
 }
 
 .right-container textarea{
-    width:100%;
+    width:85%;
     border-width: 0rem 0rem .1rem 0rem;
     padding: .5rem;
     border-color:var(--green);
