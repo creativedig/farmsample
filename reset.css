@@ -92,6 +92,8 @@ a{
     animation-delay: 2.5s; /* Add delay before the dot appears */
 }
 
+
+
 /* Animation for typing effect */
 @keyframes typing {
     0% {
