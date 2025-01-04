@@ -31,7 +31,7 @@
   font-style: normal;
 }
 
-ANTON-REGULAR FONTS
+RUBIK FONTS
 
 
 .rubik-dirt-regular {
@@ -39,4 +39,28 @@ ANTON-REGULAR FONTS
   font-weight: 400;
   font-style: normal;
 }
+
+ALUMNI FONTS
+
+.alumni-sans-collegiate-one-regular {
+  font-family: "Alumni Sans Collegiate One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alumni-sans-collegiate-one-regular-italic {
+  font-family: "Alumni Sans Collegiate One", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+BANGERS FONTS
+
+.bangers-regular {
+  font-family: "Bangers", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
