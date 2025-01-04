@@ -70,10 +70,11 @@ nav a:hover{
 
 .hero-left-container h1{
     color:var(--light);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Rubik Dirt", serif;
+     font-weight: 400;
+    font-style: normal;
     font-size:var(--bigger-size);
-    line-height: 6.5rem;
-    letter-spacing: .5rem;
+    line-height: 5rem;
 }
 
 .hero-left-container p{

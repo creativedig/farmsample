@@ -8,7 +8,7 @@
 
 --big-medium:1.5rem;
 --big-size:2rem;
---bigger-size:7rem;
+--bigger-size:5rem;
 --medium-big:5rem;
 --small-size:1.25rem;
 --smaller-size:.75rem;
@@ -34,6 +34,15 @@ html{
 }
 
 
+.main-container{
+    box-sizing:border-box;
+    padding:0px;
+}
+
+
+a{
+    text-decoration:none;
+}
 
 
 
