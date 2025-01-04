@@ -463,7 +463,7 @@ justify-content: center;
 
 .hero-left-container h1{
     font-size:var(--medium-big);
-    line-height: 3.5rem;
+    line-height: 3rem;
 }
 
 .hero-left-container p{
@@ -635,43 +635,6 @@ justify-content: center;
     color:var(--green);
     border-width: 0rem 0rem .1rem .1rem;
 }
-
-
-
-
-/*loading screen style design here*/
-/*loading screen style design here*/
-/*loading screen style design here*/
-
-/* Loading screen style */
-
-.loading-text-container {
-    font-size: 1rem;
-    font-weight: bold;
-    color: rgb(255, 234, 1);
-    text-transform: uppercase;
-    display: flex;
-}
-
-.loading-text, .dot {
-    opacity: 0;
-    animation: typing 3s steps(11) forwards, fadeIn 3s ease-out forwards;
-}
-
-.dot {
-    opacity: 0;
-    animation: dotFade 3s steps(1) forwards;
-    animation-delay: 2.5s; /* Add delay before the dot appears */
-}
-
-
-
-
-
-
-
-
-
 
 
 
