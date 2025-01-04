@@ -66,6 +66,7 @@ nav a:hover{
 
 .hero-left-container{
     max-width:60%;
+    margin-top:2rem;
 }
 
 .hero-left-container h1{
@@ -79,7 +80,7 @@ nav a:hover{
 
 .hero-left-container p{
     color:white;
-    margin:-4rem 10rem 2rem 0rem;
+    margin:-3rem 10rem 2rem 0rem;
     font-size:var(--small-size);
 }
 
@@ -457,18 +458,17 @@ justify-content: center;
     position: relative;
     z-index: 1;
     max-width:100%;
-    margin:0rem 0rem 3rem 1rem;
+    margin:2rem 0rem 3rem 1rem;
 }
 
 .hero-left-container h1{
     font-size:var(--medium-big);
-    line-height: 5rem;
-    letter-spacing: .2rem;
+    line-height: 3.5rem;
 }
 
 .hero-left-container p{
     color:white;
-    margin:-3rem 2rem 2rem 0rem;
+    margin:-2rem 2rem 2rem 0rem;
     font-size:var(--small-size);
     line-height: 1.75rem;
 }
