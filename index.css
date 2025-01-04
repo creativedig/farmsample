@@ -497,11 +497,12 @@ justify-content: center;
 
 .img-content{
     margin-top:25rem;
+    max-width:100%;
 
 }
 .img-content img{
-    width:20rem;
-    height:20rem;
+    width:18rem;
+    height:18rem;
 }
 
 
