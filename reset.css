@@ -9,7 +9,7 @@
 --big-medium:1.5rem;
 --big-size:2rem;
 --bigger-size:5rem;
---medium-big:4rem;
+--medium-big:3.5rem;
 --small-size:1.25rem;
 --smaller-size:.75rem;
 
@@ -27,6 +27,7 @@ body{
     padding:0;
     margin:0;
     font-family:"poppins";
+    overflow-x: hidden;
 }
 
 html{
