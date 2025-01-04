@@ -534,7 +534,7 @@ justify-content: center;
 }
 
 .card-box{
-    height:21rem;
+    height:25rem;
     margin-bottom: 1rem;
 }
 
@@ -553,7 +553,7 @@ justify-content: center;
 }
 
 .card-box-hidden a{
-    margin-top:-2rem;
+    margin:-2.5rem 0rem 3rem;
 }
 
 .card-box-hidden a:hover{
@@ -578,7 +578,9 @@ justify-content: center;
 }
 
 .left-container{
-    max-width:100%;
+    display:flex;
+    justify-content: center;
+    max-width:85%;
 }
 
 .left-container img{
